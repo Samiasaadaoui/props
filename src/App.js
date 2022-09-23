@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import image from "./Images.js/samia.jpg"
 import './App.css';
+import CardProfile from './Component/CardProfile';
 
-function App() {
+
+function App( ) {
+  const user=
+   { img:{image},
+    fullname:"Saadaoui Samia",
+     profession:"Student at GOMYCODE"}
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <CardProfile user={user}/>
     </div>
   );
 }
